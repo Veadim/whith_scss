@@ -1,0 +1,20 @@
+@mixin headings {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 157%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  position: relative;
+  margin-top: 79px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.09);
+    margin: 28px auto 0;
+  }
+}

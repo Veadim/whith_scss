@@ -1,0 +1,128 @@
+@import "_reset.scss";
+@import "_vars.scss";
+@import "_mixins.scss";
+
+.container {
+  margin: 0px auto;
+  width: 1140px;
+}
+
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: #404040;
+  }
+
+  &__logo {
+    width: 155px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 34px;
+  }
+}
+
+.welcome {
+  position: relative;
+  background-image: url("../img/welcome.png");
+  z-index: 0;
+  &__inner {
+  }
+
+  &__heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding-top: 105px;
+  }
+
+  &__heading::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 28px auto 0;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 25px;
+    padding-bottom: 101px;
+  }
+}
+
+.cross_img {
+  position: absolute;
+  z-index: 2;
+  top: 471px;
+  left: 0;
+}
+
+.description {
+  background-color: #fefec9;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  margin-top: 18px;
+
+  &__inner {
+    padding: 60px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    color: #47474f;
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #47474f;
+    border: 1px solid #47474f;
+    padding: 20px 34px;
+    box-shadow: 2px 2px #47474f;
+    margin-top: 39px;
+  }
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 52px;
+  height: 2px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #070707;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 52px;
+  height: 2px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #070707;
+}
+
+.lonely__heading {
+  @include headings;
+}
