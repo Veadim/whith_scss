@@ -106,7 +106,7 @@
   content: "";
   position: absolute;
   left: 50%;
-  width: 52px;
+  width: 60px;
   height: 2px;
   transform: translate(-50%, -50%) rotate(45deg);
   background-color: #070707;
@@ -117,12 +117,75 @@
   position: absolute;
   top: 0%;
   left: 50%;
-  width: 52px;
+  width: 60px;
   height: 2px;
   transform: translate(-50%, -50%) rotate(-45deg);
   background-color: #070707;
 }
 
-.lonely__heading {
+.section__heading {
   @include headings;
+}
+
+.about-us {
+  &__inner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 43px;
+  }
+
+  &__card {
+    width: 300px;
+  }
+
+  &__logo {
+    background-color: #f5f5f5;
+    height: 219px;
+    padding: 50px 0 0 0;
+  }
+
+  &__heading {
+    @include little-heading;
+    margin-top: 38px;
+  }
+
+  &__text {
+    @include vollkorn-text;
+    margin-top: 20px;
+  }
+}
+
+.Project {
+  background-color: #f5f5f5;
+  margin-top: 69px;
+
+  &__inner {
+    margin-top: 43px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 384px 384px 384px;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__card {
+    background-color: #ffffff;
+  }
+
+  &__heading {
+    @include little-heading;
+    margin-top: 19px;
+  }
+
+  &__text {
+    @include vollkorn-text;
+    margin-top: 4px;
+  }
+
+  &__spacer {
+    height: 69px;
+  }
 }

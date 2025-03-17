@@ -7,7 +7,7 @@
   text-align: center;
   color: #333;
   position: relative;
-  margin-top: 79px;
+  padding-top: 79px;
 
   &::after {
     content: "";
@@ -17,4 +17,20 @@
     background-color: rgba(0, 0, 0, 0.09);
     margin: 28px auto 0;
   }
+}
+
+@mixin little-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #333;
+}
+
+@mixin vollkorn-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 147%;
+  color: #333333;
 }
