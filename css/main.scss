@@ -24,6 +24,10 @@
     display: flex;
     gap: 34px;
   }
+
+  &__menu-link {
+    color: #404040;
+  }
 }
 
 .welcome {
@@ -160,6 +164,7 @@
 .Project {
   background-color: #f5f5f5;
   margin-top: 69px;
+  padding: 0 0 89px 0;
 
   &__inner {
     margin-top: 43px;
@@ -184,8 +189,199 @@
     @include vollkorn-text;
     margin-top: 4px;
   }
+}
 
-  &__spacer {
-    height: 69px;
+.team {
+  margin-top: 43px;
+
+  &__inner {
+    padding-top: 43px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  &__card-heading {
+    @include little-heading;
+    margin-top: 20px;
+  }
+
+  &__card-text {
+    @include vollkorn-text;
+    margin-top: 6px;
+  }
+
+  &__card-social {
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
+.feedback {
+  margin-top: 99px;
+  padding: 69px 0 98px 0;
+  background-color: #f5f5f5;
+
+  &__img {
+    text-align: center;
+  }
+
+  &__wrapper {
+    padding-top: 65px;
+    display: flex;
+    gap: 124px;
+    justify-content: center;
+  }
+
+  &__inner {
+    text-align: center;
+    width: 338px;
+    position: relative;
+  }
+
+  &__inner:first-child::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 215px;
+    background-color: #070707;
+    top: 0;
+    right: -65px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 127%;
+    text-align: center;
+    color: #333;
+  }
+
+  &__img {
+    margin-top: 24px;
+  }
+
+  &__heading {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ababab;
+  }
+}
+
+.connection {
+  background-image: url("../img/greenback.png");
+  padding-bottom: 75px;
+
+  &__wrapper {
+    margin-top: 63px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__inner {
+    width: 320px;
+  }
+
+  &__locate {
+    margin-top: 20px;
+  }
+  &__mail {
+    margin-top: 34px;
+  }
+  &__heart {
+    margin-top: 28px;
+  }
+
+  &__heading {
+    @include little-heading;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    color: #212121;
+  }
+
+  &__social {
+    margin-top: 10px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin-top: 10px;
+  }
+
+  &__socials:first-child {
+    margin-top: 20px;
+  }
+
+  &__text-link {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    color: #212121;
+  }
+}
+
+.footer {
+  background-color: #000000;
+
+  &__regform {
+    width: 564px;
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__label {
+    @include label;
+  }
+
+  &__dark {
+    background-color: rgba(255, 255, 255, 0.18);
+  }
+
+  &__light {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &__button {
+    width: 220px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    text-align: center;
+    color: #8bcac3;
+    border: 1px solid #7ec4bd;
+    padding: 15px 60px;
+    margin: 22px auto;
+  }
+
+  &__img {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 14px;
+    @include vollkorn-text;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
   }
 }
